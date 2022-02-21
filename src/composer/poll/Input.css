@@ -23,7 +23,7 @@
 
 .input input:focus {
   border-color: transparent;
-  outline-color: rgb(29, 155, 240);
+  outline-color: var(--brand-color);
 }
 
 /* Label */
@@ -57,7 +57,7 @@
 }
 
 .input input:focus + label {
-  color: rgb(29, 155, 240);
+  color: var(--brand-color);
   font-size: 13px;
   line-height: 15px;
   padding-top: 8px;

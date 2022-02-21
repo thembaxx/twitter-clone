@@ -12,6 +12,10 @@
   z-index: 10;
 }
 
+.aside__input::placeholder {
+  color: var(--primary-color);
+}
+
 .aside__label {
   display: flex;
   align-items: center;

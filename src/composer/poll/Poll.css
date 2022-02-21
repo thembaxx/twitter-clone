@@ -37,7 +37,7 @@
 }
 
 .poll__choicesAdd:hover {
-  background-color: rgba(29, 155, 240, 0.1);
+  background-color: var(--brand-color-100);
 }
 
 .poll__choicesAdd svg {

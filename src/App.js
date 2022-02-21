@@ -1,6 +1,6 @@
 import "./App.css";
 import Aside from "./Aside";
-import Sidebar from "./Sidebar";
+import Sidebar from "./sidebar/Sidebar";
 import Timeline from "./Timeline";
 
 function App() {

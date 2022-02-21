@@ -1,5 +1,5 @@
 .composer {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.2s;
   min-width: 390px;
 }
@@ -46,7 +46,7 @@
 }
 
 .composer__textarea {
-  color: rgb(15, 20, 25);
+  color: var(--primary-color);
   font-family: inherit;
   font-size: 19px;
   font-weight: 400;
@@ -71,7 +71,7 @@
   overflow: hidden;
 }
 
-[contenteditable='true']:empty:before {
+[contenteditable="true"]:empty:before {
   color: #536471;
   content: attr(data-placeholder);
   pointer-events: none;

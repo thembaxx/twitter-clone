@@ -23,13 +23,21 @@
   --twitter-lightgray: #aab8c2;
   --twitter-extra-lightgray: #e1e8ed;
   --twitter-extra-extra-lightgray: #f5f8fa;
+
+  --brand-color: rgb(29, 155, 240);
+  --brand-color-100: rgba(15, 26, 32, 0.1);
+  --brand-color-600: rgb(26, 140, 216);
+  --primary-color: rgb(15, 20, 25);
+  --primary-color-100: rgba(15, 20, 25, 0.1);
+  --secondary-color: rgb(83, 100, 113);
+  --black-30: rgba(0, 0, 0, 0.03);
 }
 
 .app {
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
   height: 100vh;
 }
