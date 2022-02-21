@@ -1,0 +1,52 @@
+.trend {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 11px 15px;
+  position: relative;
+}
+
+.trend:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.trend--small {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--twitter-darkgray);
+  line-height: 15px;
+  margin-top: 4px;
+}
+
+.trend__title {
+  color: var(--twitter-black);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  overflow-wrap: break-word;
+  padding-top: 2px;
+}
+
+.trend__options {
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--twitter-darkgray);
+  min-height: 19px;
+  margin: 8px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.trend__options svg {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.trend__options:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+  fill: var(--twitter-blue);
+}

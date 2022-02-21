@@ -1,0 +1,60 @@
+.trends {
+  background-color: rgb(247, 249, 249);
+  border-radius: 16px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 350px;
+  margin-right: 10px;
+  margin-top: 78px;
+}
+
+.trends__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 15px;
+}
+
+.trends__title {
+  color: var(--twitter-black);
+  line-height: 23px;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.trends__options {
+  border-radius: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+}
+
+.trends__options svg {
+  height: 19px;
+  width: 19px;
+}
+
+.trends__options:hover {
+  background-color: var(--twitter-extra-lightgray);
+}
+
+.trends__list {
+  list-style: none;
+}
+
+.trends__more {
+  cursor: pointer;
+  color: var(--twitter-blue);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  width: 100%;
+  padding: 15px;
+}
+
+.trends__more:hover {
+  background-color: var(--twitter-extra-lightgray);
+}
