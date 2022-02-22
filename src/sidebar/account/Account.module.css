@@ -47,63 +47,7 @@
 
 .icon {
   fill: var(--primary-color);
-  /* flex-grow: 1; */
   margin-left: auto;
   height: 1.25rem;
   max-width: 100%;
-}
-
-.sidebarProfile {
-  border-radius: 9999px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  height: 60px;
-  padding: 11px;
-  width: 100%;
-}
-
-.sidebarProfile:hover {
-  background-color: var(--primary-color-100);
-}
-
-.sidebarProfile__avatar {
-  background-color: white;
-  height: 38px;
-  width: 38px;
-  border-radius: 38px;
-  overflow: hidden;
-}
-
-.sidebarProfile__avatarImage {
-  object-fit: cover;
-}
-
-.sidebarProfile__userInfo {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
-  margin-left: 11px;
-  margin-right: 11px;
-}
-
-.sidebarProfile__name {
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
-.sidebarProfile__username {
-  color: var(--secondary-color);
-}
-
-.sidebarProfile__more {
-  display: flex;
-  justify-content: flex-end;
-  margin-left: auto;
-}
-
-.sidebarProfile__more svg {
-  height: 1.25rem;
-  max-width: 100%;
-  fill: var(--primary-color);
 }
