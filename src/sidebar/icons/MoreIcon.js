@@ -1,8 +1,8 @@
 import React from 'react';
 
-function MoreIcon() {
+function MoreIcon({ className }) {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true">
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
       <g>
         <circle cx="17" cy="12" r="1.5"></circle>
         <circle cx="12" cy="12" r="1.5"></circle>

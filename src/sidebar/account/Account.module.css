@@ -1,3 +1,58 @@
+.container {
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 11px;
+  width: 100%;
+
+  transition: background-color 0.2s;
+}
+
+.container:hover {
+  background-color: var(--primary-color-100);
+}
+
+.imageContainer {
+  background-color: white;
+  border-radius: 9999px;
+  height: 38px;
+  width: 38px;
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.username {
+  color: var(--secondary-color);
+}
+
+.icon {
+  fill: var(--primary-color);
+  /* flex-grow: 1; */
+  margin-left: auto;
+  height: 1.25rem;
+  max-width: 100%;
+}
+
 .sidebarProfile {
   border-radius: 9999px;
   cursor: pointer;

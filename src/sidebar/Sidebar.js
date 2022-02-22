@@ -1,24 +1,25 @@
 import React from 'react';
-import './Sidebar.css';
-import SidebarNav from './sidebarNav/SidebarNav';
-import SidebarProfile from './sidebarProfile/SidebarProfile';
+import styles from './Sidebar.module.css';
 
-import TwitterIcon from './icons/TwitterIcon';
+import Logo from './logo/Logo';
+import Nav from './nav/Nav';
+import Tweet from './tweet/Tweet';
+import Account from './account/Account';
 
 function Sidebar() {
   return (
-    <div className="sidebar">
-      <div className="sidebar__menu">
-        <a href="/" className="sidebar__logo">
-          <div className="sidebar__logoInner">
-            <TwitterIcon />
-          </div>
-        </a>
-        <SidebarNav />
-        <button className="sidebar__tweet">Tweet</button>
+    <div className={styles.container}>
+      <div>
+        <div className={styles.logo}>
+          <Logo />
+        </div>
+        <Nav />
+        <div className={styles.tweet}>
+          <Tweet />
+        </div>
       </div>
-      <div className="sidebar__profile">
-        <SidebarProfile />
+      <div className={styles.account}>
+        <Account />
       </div>
     </div>
   );

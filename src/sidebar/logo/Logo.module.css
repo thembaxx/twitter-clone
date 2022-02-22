@@ -1,0 +1,19 @@
+.container {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  width: 49px;
+  transition: background-color 0.2s ease-out;
+}
+
+.container:hover {
+  background-color: var(--brand-color-100);
+}
+
+.icon {
+  fill: var(--brand-color);
+  height: 28px;
+  width: 47px;
+}

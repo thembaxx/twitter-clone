@@ -1,8 +1,8 @@
 import React from 'react';
 
-function MoreHorIcon() {
+function MoreHorIcon({ className }) {
   return (
-    <svg className="more__icon" viewBox="0 0 24 24" aria-hidden="true">
+    <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
       <g>
         <circle cx="5" cy="12" r="2"></circle>
         <circle cx="12" cy="12" r="2"></circle>

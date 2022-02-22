@@ -1,0 +1,24 @@
+.container {
+  background-color: var(--brand-color);
+  border-radius: 9999px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  min-height: 49px;
+  min-width: 49px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 19px;
+  padding: 0 30px;
+  width: 100%;
+  transition: background-color 0.2s;
+  outline: none;
+}
+
+.container:hover {
+  background-color: var(--brand-color-600);
+}
