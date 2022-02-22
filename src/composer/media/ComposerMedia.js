@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import './ComposerMedia.css';
-import { fileTypes } from '../constants';
+import React, { useState } from "react";
+import "./ComposerMedia.css";
+import { fileTypes } from "../constants";
 
-import CloseIcon from '../icons/CloseIcon';
-import PlayIcon from '../icons/PlayIcon';
-import PaintBrushIcon from '../icons/PaintBrushIcon';
+import CloseIcon from "../icons/CloseIcon";
+import PlayIcon from "../icons/PlayIcon";
+import PaintBrushIcon from "../icons/PaintBrushIcon";
 
 function ComposerMedia({ item, style, remove }) {
   const { id, imgUrl, type, canEdit } = item;
@@ -46,7 +46,7 @@ function ComposerMedia({ item, style, remove }) {
         {type === fileTypes.gif && (
           <div
             className="composerMedia_play"
-            style={{ display: `${isPlaying ? 'none' : 'flex'}` }}
+            style={{ display: `${isPlaying ? "none" : "flex"}` }}
           >
             <PlayIcon />
           </div>

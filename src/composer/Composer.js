@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { fileTypes, fileOrigin } from "../constants";
+import { fileTypes, fileOrigin } from "./constants";
 import "./Composer.css";
 
-import ComposerMediaList from "./ComposerMediaList";
-import ComposerToolbar from "./ComposerToolbar";
+import ComposerMediaList from "./media/ComposerMediaList";
+import ComposerToolbar from "./toolbar/ComposerToolbar";
 import Poll from "./poll/Poll";
-import GIFModal from "./GIFModal";
+import GIFModal from "./gif/GIFModal";
+
+const defaultToolbarEnabledState = {
+  upload: true,
+  gif: true,
+  poll: true,
+  emoji: true,
+  schedule: true,
+  location: false,
+};
 
 function Composer() {
   const maxFiles = 4;
@@ -14,15 +23,6 @@ function Composer() {
   const [hasMedia, setHasMedia] = useState(false);
   const [gifModalOpen, setGifModalOpen] = useState(false);
   const [showPoll, setShowPoll] = useState(false);
-
-  const defaultToolbarEnabledState = {
-    upload: true,
-    gif: true,
-    poll: true,
-    emoji: true,
-    schedule: true,
-    location: false,
-  };
 
   const [toolbarEnabledState, setToolbarEnabledState] = useState(
     defaultToolbarEnabledState
@@ -130,7 +130,7 @@ function Composer() {
     }
 
     setToolbarEnabledState(enabledState);
-  }, [files, toolbarEnabledState, defaultToolbarEnabledState]);
+  }, [files, toolbarEnabledState]);
 
   return (
     <div className="composer">

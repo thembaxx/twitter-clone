@@ -5,7 +5,7 @@
   height: 100%;
   padding: 0 11px;
   width: 275px;
-  position: sticky;
+  position: fixed;
 }
 
 /* Logo */

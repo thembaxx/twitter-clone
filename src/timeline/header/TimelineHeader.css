@@ -1,0 +1,40 @@
+.timelineHeader {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 10;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.timelineHeader__title {
+  color: var(--primary-color);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23px;
+  text-overflow: ellipsis;
+}
+
+.timelineHeader__button {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  transition: background-color 0.2s;
+}
+
+.timelineHeader__button:hover {
+  background-color: var(--primary-color-100);
+}
+
+.timelineHeader__button svg {
+  fill: var(--primary-color);
+  height: 19px;
+  width: 19px;
+}

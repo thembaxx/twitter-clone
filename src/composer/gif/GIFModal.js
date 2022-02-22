@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GIFModal.css";
-import { getCategories, search, get } from "../tenor";
+import { getCategories, search, get } from "./tenor";
 import GIFCategories from "./GIFCategories";
 import GIFList from "./GIFList";
 

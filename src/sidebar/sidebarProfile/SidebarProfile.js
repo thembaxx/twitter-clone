@@ -1,7 +1,7 @@
-import React from 'react';
-import './SidebarProfile.css';
+import React from "react";
+import "./SidebarProfile.css";
 
-import MoreHorIcon from '../icons/MoreHorIcon';
+import MoreHorIcon from "../icons/MoreHorIcon";
 
 function SidebarProfile() {
   return (
@@ -9,7 +9,7 @@ function SidebarProfile() {
       <div className="sidebarProfile__avatar">
         <img
           className="sidebarProfile__avatarImage"
-          src="https://randomuser.me/api/portraits/thumb/women/17.jpg"
+          src="https://randomuser.me/api/portraits/thumb/women/6.jpg"
           alt=""
         />
       </div>

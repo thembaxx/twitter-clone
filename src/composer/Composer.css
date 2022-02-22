@@ -8,6 +8,7 @@
   background-color: white;
   border-radius: 16px;
   display: flex;
+  align-items: flex-start;
   padding: 15px 15px;
   max-width: 598px;
 }

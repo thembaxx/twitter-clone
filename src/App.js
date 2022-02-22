@@ -1,12 +1,14 @@
 import "./App.css";
 import Aside from "./Aside";
 import Sidebar from "./sidebar/Sidebar";
-import Timeline from "./Timeline";
+import Timeline from "./timeline/Timeline";
 
 function App() {
   return (
     <div className="app">
-      <Sidebar />
+      <div className="app__sidebar">
+        <Sidebar />
+      </div>
       <main>
         <Timeline />
         <Aside />

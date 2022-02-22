@@ -1,0 +1,19 @@
+.timeline {
+  background-color: white;
+  border-left: 1px solid rgb(239, 243, 244);
+  border-right: 1px solid rgb(239, 243, 244);
+  width: 600px;
+  height: 100%;
+  position: relative;
+}
+
+.timeline__header {
+  position: fixed;
+  width: 100%;
+  max-width: 600px;
+  z-index: 100;
+}
+
+.timeline__composer {
+  padding-top: 50px;
+}
