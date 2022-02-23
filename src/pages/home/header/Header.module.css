@@ -1,0 +1,45 @@
+.container {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 10;
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  max-width: 600px;
+  z-index: 100;
+  width: 100%;
+}
+
+.title {
+  color: var(--primary-color);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 23px;
+  text-overflow: ellipsis;
+}
+
+.button {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 34px;
+  margin-right: -8.5px;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--primary-color-100);
+}
+
+.icon {
+  fill: var(--primary-color);
+  height: 19px;
+  width: 19px;
+}

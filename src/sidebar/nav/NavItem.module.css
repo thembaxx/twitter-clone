@@ -1,25 +1,17 @@
-.navItem {
+.container {
+  border-radius: 9999px;
   color: var(--primary-color);
   cursor: pointer;
-
-  display: flex;
-  justify-content: flex-start;
 
   font-size: 19px;
   font-weight: 400;
   line-height: 23px;
-  text-decoration: none;
 
-  transition: background-color 0.2s ease-out;
-}
-
-.container {
-  border-radius: 9999px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   padding: 11px;
-  transition: inherit;
+  transition: background-color 0.2s ease-out;
+  user-select: none;
 }
 
 .container:hover {

@@ -42,14 +42,6 @@
   height: 100vh;
 }
 
-.app__sidebar {
-  position: relative;
-  width: 275px;
-}
-
-main {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 990px;
+.app {
+  height: 100vh;
 }

@@ -1,4 +1,4 @@
-.userFollow {
+.container {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -7,55 +7,53 @@
   position: relative;
 }
 
-.userFollow:hover {
-  background-color: rgba(0, 0, 0, 0.03);
-}
-
-.userFollow__profile {
+.user {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19px;
 }
 
-.userFollow__avatar {
-  border-radius: 100px;
+.imageContainer {
+  border-radius: 9999px;
   height: 50px;
   width: 50px;
   margin-right: 11px;
   overflow: hidden;
 }
 
-.userFollow__image {
-  object-fit: cover;
+.image {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
-.userFollow__name {
+.info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.name {
   color: var(--twitter-black);
   font-weight: 700;
   text-decoration: none;
 }
 
-.userFollow__name:hover {
+.name:hover {
   text-decoration: underline;
 }
 
-.userFollow_username {
-  color: var(--twitter-darkgray);
+.username {
+  color: var(--secondary-color);
 }
 
-.userFollow__btn {
-  background-color: var(--twitter-black);
+.button {
+  background-color: var(--primary-color);
   display: flex;
   align-items: center;
-  border-radius: 100px;
-  color: #fff;
+  border-radius: 9999px;
+  color: white;
   font-size: 13px;
   font-weight: 700;
   padding: 1px 15px;
   min-height: 30px;
-  text-decoration: none;
 }

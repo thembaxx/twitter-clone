@@ -1,0 +1,48 @@
+.container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 11px 15px;
+  position: relative;
+}
+
+.title {
+  color: var(--twitter-black);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  overflow-wrap: break-word;
+  padding-top: 2px;
+}
+
+.subtitle {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin-top: 4px;
+}
+
+.button {
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--secondary-color);
+  margin: 8px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--brand-color-100);
+  fill: var(--brand-color);
+}
+
+.icon {
+  height: 1.25em;
+  width: 1.25em;
+}

@@ -1,27 +1,55 @@
-import React from 'react';
-import styles from './Nav.module.css';
-import NavItem from './NavItem';
+import React, { useState } from "react";
+import styles from "./Nav.module.css";
+import { Outlet, Link } from "react-router-dom";
+import NavItem from "./NavItem";
 
-import HomeIcon from '../icons/HomeIcon';
-import ExploreIcon from '../icons/ExploreIcon';
-import NotificationIcon from '../icons/NotificationIcon';
-import MessagesIcon from '../icons/MessagesIcon';
-import ProfileIcon from '../icons/ProfileIcon';
-import BookmarksIcon from '../icons/BookmarksIcon';
-import ListsIcon from '../icons/ListsIcon';
-import MoreIcon from '../icons/MoreIcon';
+import { navItems } from "./helpers";
 
 function Nav() {
+  const [items, setItems] = useState(navItems);
+
+  function handleClick(text) {
+    const _items = [...items];
+    const match = _items.find((item) => item.text === text);
+    if (match) {
+      _items.forEach((item) => {
+        item.active = item.text === text;
+      });
+
+      setItems(_items);
+    }
+  }
+
+  function generateNavItem({ path, Icon, text, active, badge }, index) {
+    if (text === "More") {
+      return (
+        <NavItem
+          key={index}
+          Icon={Icon}
+          text={text}
+          active={active}
+          badge={badge}
+        />
+      );
+    } else {
+      return (
+        <Link
+          key={index}
+          className={styles.link}
+          to={path}
+          onClick={() => handleClick(text)}
+          draggable="false"
+        >
+          <NavItem Icon={Icon} text={text} active={active} badge={badge} />
+        </Link>
+      );
+    }
+  }
+
   return (
     <div className={styles.nav}>
-      <NavItem Icon={HomeIcon} text="Home" active={true} />
-      <NavItem Icon={ExploreIcon} text="Explore" />
-      <NavItem Icon={NotificationIcon} text="Notifications" />
-      <NavItem Icon={MessagesIcon} text="Messages" />
-      <NavItem Icon={BookmarksIcon} text="Bookmarks" />
-      <NavItem Icon={ListsIcon} text="Lists" />
-      <NavItem Icon={ProfileIcon} text="Profile" />
-      <NavItem Icon={MoreIcon} text="More" />
+      {items.map((navItem, index) => generateNavItem(navItem, index))}
+      <Outlet />
     </div>
   );
 }
